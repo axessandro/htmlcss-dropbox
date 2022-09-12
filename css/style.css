@@ -31,6 +31,11 @@ ul{
     color: white;
 }
 
+.btn-white{
+    color: gray;
+    border: 1px solid gray;
+}
+
 .large-container{
     width: 70%;
     margin: 0 auto;
@@ -41,6 +46,17 @@ ul{
     margin: 0 auto;
 }
 
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+h2{
+    font-size: 1.8em;
+    margin-top: 4em;
+    margin-bottom: 1.8em;
+}
 /* /COMMON */
 
 
@@ -180,11 +196,6 @@ header ul{
 
 /* SECTION1 */
 
-.section1 h2{
-    font-size: 1.8em;
-    margin-top: 4em;
-    margin-bottom: 1.8em;
-}
 
 .section1 .radio{
     display: inline-block;
@@ -195,7 +206,7 @@ header ul{
 
     /* grid */
 
-    .section1 .row{
+    .row{
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -204,7 +215,7 @@ header ul{
         font-size: 0.8em;
     }
 
-    .section1 .row .col{
+    .row .col{
         width: calc(100% / 3 - 3em);
         background-color: aquamarine;
     }
@@ -292,10 +303,9 @@ header ul{
 
 /* ROW LARGE */
 .row-large{
-    margin-top: 1.5em;
+    margin-top: 2em;
     font-size: 0.8em;
     width: 100%;
-    margin-bottom: 5em;
 }
 
 .top-card-team{
@@ -307,5 +317,44 @@ header ul{
    font-weight: 400;
 }
 
-
 /* /SECTION1 */
+
+/* SECTION 2 */
+.section2{
+    margin: 8em 0;
+}
+
+.img-col{
+    width: 60%;
+}
+
+.text-col{
+    padding: 2.5em 2em ;
+    width: 40%;
+    font-size: 0.85em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.text-col p{
+    margin-top: 1.5em;
+    margin-bottom: 2.5em;
+    color: gray;
+}
+/* /SECTION 2 */
+
+/* SECTION 3 */
+
+.text-container h3{
+    margin-bottom: 1.5em;
+    line-height: 1.3em;
+}
+
+.text-container p{
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
+/* /SECTION 3 */
