@@ -6,7 +6,9 @@
 }
 
 html{
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200; 
+    font-size: 0.8;
 }
 
 img{
@@ -31,6 +33,11 @@ ul{
 
 .large-container{
     width: 70%;
+    margin: 0 auto;
+}
+
+.container{
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -170,3 +177,135 @@ header ul{
     margin-top: 1.5em;
 }
 /* /JUMBO */
+
+/* SECTION1 */
+
+.section1 h2{
+    font-size: 1.8em;
+    margin-top: 4em;
+    margin-bottom: 1.8em;
+}
+
+.section1 .radio{
+    display: inline-block;
+    margin-right: 2.5em;
+    margin-bottom: 2em;
+    font-size: 0.8em;
+}
+
+    /* grid */
+
+    .section1 .row{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        background-color: blueviolet;
+        font-size: 0.8em;
+    }
+
+    .section1 .row .col{
+        width: calc(100% / 3 - 3em);
+        background-color: aquamarine;
+    }
+
+    /* card plan */
+        .card-plan{
+            border: 1px solid gray;
+        }
+
+        .card-plan .type-plan{
+            border-bottom: 1px solid gray;
+            text-align: center;
+            padding: 0.5em 0;
+        }
+
+        .card-plan .info-plan{
+            padding: 2em 1.5em;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .info-plan h3{
+            font-size: 1.5em;
+            margin-bottom: 0.8em;
+        }
+        
+        .info-plan .price{
+            font-weight: 400;
+            margin-bottom: 0.8em;
+            
+        }
+
+        .info-plan .xmon{
+            color: rgb(85, 85, 85);
+            margin-bottom: 2.5em;
+        }
+
+
+        .info-plan .share, .gb-archive, .n-users{
+            margin-bottom: 1em;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .info-plan i{
+            margin-right: 0.5em;
+        }
+
+        .info-plan .share{
+            margin-bottom: 3em;
+        }
+
+        .info-plan .btn a{
+            color: inherit;
+            text-decoration: inherit;
+            font-size: inherit;
+        }
+
+        .info-plan .btn{
+            margin-bottom: 1.5em;
+        }
+
+        .info-plan hr{
+            margin: 2em 0;
+            width: 20%;
+            border: 0.5px solid gray;
+        }
+
+        .info-plan h4{
+            margin-bottom: 2em;
+        }
+
+        .info-plan ul li{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 1.8em;
+            
+        }
+
+        .info-plan li i{
+            color: blue;
+        } 
+
+
+/* ROW LARGE */
+.row-large{
+    margin-top: 1.5em;
+    font-size: 0.8em;
+    width: 100%;
+    margin-bottom: 5em;
+}
+
+.top-card-team{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-large .info-plan .price{
+   font-weight: 400;
+}
+
+
+/* /SECTION1 */
