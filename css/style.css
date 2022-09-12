@@ -450,3 +450,90 @@ header ul{
 }
 
 /* /SECTION 5 */
+
+/* FAQ */
+.faq{
+    padding-bottom: 6em;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-right: 2em;
+}
+
+.question .icon:first-of-type{
+    display: none;
+}
+
+
+.answer{
+    padding: 2em 0;
+    display: none;   
+}
+
+.question:hover .answer{
+    display: block;
+}
+
+.question:hover .icon:first-child{
+    display: unset;
+}
+/* /FAQ */
+
+/* FOOTER */
+
+footer{
+    background-color: black;
+    color: white;
+    padding-top: 5em;
+    padding-bottom: 2em;
+}
+
+.row-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.col-footer{
+    width: calc(20% - 4em);
+
+}
+
+.card-footer ul li{
+    line-height: 1.8em;
+    
+}
+
+.card-footer ul li a{
+    color: inherit;
+    font-size: 0.7em;
+    text-decoration: inherit;
+}
+
+.card-footer h4{
+    font-size: 1.4em;
+}
+
+.card-footer ul{
+    margin-top: 1.5em;
+    margin-bottom: 5em;
+}
+
+footer hr{
+    width: 10%;
+}
+
+.language{
+    margin-top: 2em ;
+}
+
+.language i {
+    font-size: 0.8em;
+}
+/* /FOOTER */
