@@ -20,8 +20,18 @@ ul{
 
 /* COMMON */
 
+.btn{
+    padding: 0.5em 1em;
+}
+
 .btn-blu{
     background-color: blue;
+    color: white;
+}
+
+.large-container{
+    width: 70%;
+    margin: 0 auto;
 }
 
 /* /COMMON */
@@ -31,7 +41,7 @@ ul{
 
 header{
     width: 100%;
-    height: 4em;
+    height: 5em;
     position: fixed;
     z-index: 999;
     display: flex;
@@ -39,6 +49,7 @@ header{
     align-items: center;
     text-decoration: none;
     padding: 0 1em;
+    font-size: 0.8em;
     /* debug */
     background-color: coral;
 }
@@ -63,7 +74,6 @@ header ul{
 
 
 .header-left, .header-right{
-    width: 33%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -72,11 +82,14 @@ header ul{
 
     /* hader left */
     .header-left{
-        justify-content: space-between
+        justify-content: space-around;
+        width: 33%;
+
     }
 
     .header-left #logo{
         width: 25%;
+        margin-right: 2.5em;
     }
 
     .header-left ul li{
@@ -89,15 +102,16 @@ header ul{
     }
 
     .header-left ul:nth-child(odd){
-        width: 30%;
+        width: 25%;
     }
     /* /hader left */
 
     /* hader right */
     .header-right{
-        justify-content: space-between;
+        justify-content: space-around;
+        width: 30%;
+        
     }
-
 
     .header-right ul:nth-child(2){
         width: calc(2/5);
@@ -105,3 +119,54 @@ header ul{
     /* /hader right */
 
 /* /HEADER */
+
+/* JUMBO */
+
+.jumbo{
+    background-color: aqua;
+    width: 100%;
+    height: 85vh;
+    padding-top: 7.5em;
+    
+}
+
+.jumbo a{
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    text-decoration: inherit;
+}
+
+.jumbo h1{
+    font-size: 4em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.jumbo .img-content-container{
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8em;
+}
+
+.jumbo .content-col{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.jumbo .img-col{
+    width: 60%;
+}
+
+.content-col .btn{
+    margin: 1.5em 0em;
+} 
+
+.jumbo .icon-jumbo{
+    font-size: 2.5em;
+    margin-top: 1.5em;
+}
+/* /JUMBO */
