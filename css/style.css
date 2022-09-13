@@ -8,9 +8,10 @@
 html{
     font-family: 'Open Sans', sans-serif;
     font-weight: 200; 
-    font-size: 0.9em;
+    font-size: 1 em;
 }
 
+/* COMMON */
 img{
     max-width: 100%;
 }
@@ -18,9 +19,6 @@ img{
 ul{
     list-style-type: none;
 }
-
-
-/* COMMON */
 
 .btn{
     padding: 0.5em 1em;
@@ -47,12 +45,12 @@ ul{
 }
 
 .large-container{
-    width: 70%;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 .container{
-    width: 60%;
+    max-width: 995px;
     margin: 0 auto;
 }
 
@@ -63,7 +61,7 @@ ul{
 }
 
 h2{
-    font-size: 1.8em;
+    font-size: 2.3em;
     margin-top: 4em;
     margin-bottom: 1.8em;
 }
@@ -71,7 +69,6 @@ h2{
 
 
 /* HEADER */
-
 header{
     width: 100%;
     height: 5em;
@@ -189,17 +186,29 @@ header a:hover {
     align-items: flex-start;
 }
 
+.jumbo .text-jumbo{
+    line-height: 1.4em;
+    padding-right: 1em;
+}
+
 .jumbo .img-col{
+    position: relative;
+    height: 1em;
+}
+
+.jumbo .img-col .img{
+    position: absolute;
     width: 60%;
 }
 
 .content-col .btn{
-    margin: 1.5em 0em;
+    margin: 2.5em 0em;
 } 
 
 .jumbo .icon-jumbo{
     font-size: 2.5em;
-    margin-top: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
 }
 /* /JUMBO */
 
@@ -246,6 +255,15 @@ header a:hover {
             justify-content: flex-start;
         }
 
+        .card-plan .info-plan .top-card-plan{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-bottom: 1.5em;
+            min-height: 24em;
+            position: relative;
+        }
+
         .info-plan h3{
             font-size: 1.5em;
             margin-bottom: 0.8em;
@@ -283,9 +301,13 @@ header a:hover {
             font-size: inherit;
         }
 
-        .info-plan .btn{
-            margin-bottom: 1.5em;
+        .top-card-plan .btn{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
         }
+        
 
         .info-plan hr{
             margin: 2em 0;
@@ -307,23 +329,30 @@ header a:hover {
         .info-plan li i{
             color: #0061FF;
         } 
+    /* /grid */
 
+    /* row large */
+    .row-large{
+        margin-top: 2em;
+        font-size: 0.8em;
+        width: 100%;
+    }
 
-/* ROW LARGE */
-.row-large{
-    margin-top: 2em;
-    font-size: 0.8em;
-    width: 100%;
-}
+    .top-card-team{
+        display: flex;
+        justify-content: space-between;
+    }
 
-.top-card-team{
-    display: flex;
-    justify-content: space-between;
-}
+    .row-large .info-plan .price{
+    font-weight: 400;
+    padding-bottom: 3em;
+    }
 
-.row-large .info-plan .price{
-   font-weight: 400;
-}
+    .row-large .info-plan .team-offert{
+        color: gray;
+        width: 60%;
+    }
+    /* /row large */
 
 /* /SECTION1 */
 
@@ -337,13 +366,19 @@ header a:hover {
 }
 
 .text-col{
-    padding: 2.5em 2em ;
+    padding: 3.5em 3em ;
     width: 40%;
-    font-size: 0.85em;
+    font-size: 0.9em;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    line-height: 1.4em;
+}
+
+.text-col h3{
+    font-size: 1.6em;
+    line-height: 1.3em;
 }
 
 .text-col p{
@@ -354,15 +389,20 @@ header a:hover {
 /* /SECTION 2 */
 
 /* SECTION 3 */
+.text-container{
+    padding: 1em;
+}
 
 .text-container h3{
-    margin-bottom: 1.5em;
+    margin-bottom: 1.4em;
     line-height: 1.3em;
+    font-size: 1.6em;
 }
 
 .text-container p{
     font-weight: 200;
     font-size: 0.9em;
+    line-height: 1.4em;
     color: gray;
 }
 
@@ -435,22 +475,18 @@ header a:hover {
     margin-bottom: 3em;
 }
 
-.box-logo-container{
+.small-square img{
+    filter: invert(1);
     width: 50%;
-    height: 50%;
-}
-
-.box-logo-container svg{
-    width: 100%;
     position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 50%;
-    fill: white;
 }
 
 .box1{
     background-color: #A2D39B;
+    border: 1em solid #D1E9CD;
 }
 
 .box2{
@@ -496,8 +532,13 @@ header a:hover {
     padding: 3em 0;
     margin: 0 0;
     width: 50%;
+    color: #61082B;
 }
 
+.section5 .btn{
+    border: none;
+    padding: 0.6em 3em;
+}
 /* /SECTION 5 */
 
 /* FAQ */
@@ -559,7 +600,7 @@ footer{
 }
 
 .card-footer li:hover{
-    background-color: rgb(28, 28, 28);
+    background-color: rgb(44, 44, 44);
 }
 
 .card-footer ul li a{
@@ -583,9 +624,28 @@ footer hr{
 
 .language{
     margin-top: 2em ;
+    width: 8em;
+    padding: 0.4em;
+    border-radius: 10px;
+}
+
+.language:hover{
+    background-color: rgb(44, 44, 44);
+
 }
 
 .language i {
     font-size: 0.8em;
+    padding-left: 0.5em;
+}
+
+.language a {
+    color: inherit;
+    text-decoration: inherit;
+    font-size: inherit;
+}
+
+.language span{
+    padding: 0 0.5em;
 }
 /* /FOOTER */
