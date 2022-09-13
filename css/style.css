@@ -8,7 +8,7 @@
 html{
     font-family: 'Open Sans', sans-serif;
     font-weight: 200; 
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 img{
@@ -30,6 +30,14 @@ ul{
 .btn-blu{
     background-color: #0061FF;
     color: white;
+}
+
+.btn-blu:hover{
+    background-color: #1752b1;
+}
+
+.btn-white:hover{
+    background-color: #F5F5F5;
 }
 
 .btn-white{
@@ -85,7 +93,6 @@ header a{
     text-decoration: inherit;
     font-weight: 200;
     text-align: center;
-
 }
 
 header ul{
@@ -93,22 +100,22 @@ header ul{
     align-items: center;
     justify-content: space-between;
     width: 75%;
-
 }
-
 
 .header-left, .header-right{
     height: 100%;
     display: flex;
     align-items: center;
-
 }
 
+header a:hover {
+    border-bottom: 2px solid rgb(167, 167, 167);
+    background-color: #f6f6f6;
+}
     /* hader left */
     .header-left{
         justify-content: space-around;
         width: 33%;
-
     }
 
     .header-left #logo{
@@ -117,31 +124,32 @@ header ul{
     }
 
     .header-left ul li{
-        height: 100%;
+        line-height: 1em;
         text-align: center;
+        padding: 2em 0;
     }
 
     ul li a{
-        padding: 0.5em 0.5em;
+        padding: 2em 0.8em;
     }
 
     .header-left ul:nth-child(odd){
         width: 25%;
     }
+
+
     /* /hader left */
 
     /* hader right */
     .header-right{
         justify-content: space-around;
         width: 30%;
-        
     }
 
     .header-right ul:nth-child(2){
         width: calc(2/5);
     }
     /* /hader right */
-
 /* /HEADER */
 
 /* JUMBO */
@@ -149,9 +157,8 @@ header ul{
 .jumbo{
     background-color: #B4D0E7;
     width: 100%;
-    height: 85vh;
+    /* height: 85vh; */
     padding-top: 7.5em;
-    
 }
 
 .jumbo a{
@@ -171,6 +178,7 @@ header ul{
     display: flex;
     flex-direction: row;
     font-size: 0.8em;
+    
 }
 
 .jumbo .content-col{
@@ -196,8 +204,6 @@ header ul{
 /* /JUMBO */
 
 /* SECTION1 */
-
-
 .section1 .radio{
     display: inline-block;
     margin-right: 2.5em;
@@ -429,12 +435,9 @@ header ul{
     margin-bottom: 3em;
 }
 
-
-
 .box-logo-container{
     width: 50%;
     height: 50%;
-    
 }
 
 .box-logo-container svg{
@@ -553,7 +556,10 @@ footer{
 
 .card-footer ul li{
     line-height: 1.8em;
-    
+}
+
+.card-footer li:hover{
+    background-color: rgb(28, 28, 28);
 }
 
 .card-footer ul li a{
