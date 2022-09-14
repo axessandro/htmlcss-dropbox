@@ -41,7 +41,7 @@ ul{
 
 .btn-white{
     color: gray;
-    border: 1px solid gray;
+    border: var(--border-gray);
     background-color: white;
 }
 
@@ -66,11 +66,26 @@ h2{
     margin-top: 4em;
     margin-bottom: 1.8em;
 }
+
+
+/* VARIABILI */
+
+:root{
+    --border-gray: 1px solid rgb(184, 184, 184);
+}
+
+:root{
+    --color-gray: rgb(184, 184, 184);
+}
+
+
+/* VARIABILI */
+
+
 /* /COMMON */
 
-
 /* HEADER */
-header{
+.header{
     width: 100%;
     height: 5em;
     position: fixed;
@@ -96,7 +111,6 @@ header a{
 header ul{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     width: 75%;
 }
 
@@ -107,17 +121,20 @@ header ul{
 }
 
 header a:hover {
-    border-bottom: 2px solid rgb(167, 167, 167);
+    border-bottom: 2px solid rgb(184, 184, 184);
     background-color: #f6f6f6;
+    font-weight: 400;
 }
     /* hader left */
     .header-left{
         justify-content: space-around;
-        width: 33%;
+        width: 50%;
+        justify-content: flex-start;
+
     }
 
     .header-left #logo{
-        width: 25%;
+        
         margin-right: 2.5em;
         min-width: 70px;
     }
@@ -125,11 +142,12 @@ header a:hover {
     .header-left ul li{
         line-height: 1em;
         text-align: center;
-        padding: 2em 0;
+        padding: 2em 0em;
+        
     }
 
     ul li a{
-        padding: 2em 0.8em;
+        padding: 2em 3em;
     }
 
     .header-left ul:nth-child(odd){
@@ -141,8 +159,17 @@ header a:hover {
 
     /* hader right */
     .header-right{
-        justify-content: space-around;
-        width: 30%;
+        justify-content: flex-end;
+        width: 50%;
+        margin-right: 2em;
+    }
+
+    .header-right .btn{
+        margin-left: 3em;
+    }
+
+    .header-right ul{
+        justify-content: flex-end;
     }
 
     .header-right ul:nth-child(2){
@@ -215,11 +242,37 @@ header a:hover {
 /* /JUMBO */
 
 /* SECTION1 */
-.section1 .radio{
-    display: inline-block;
-    margin-right: 2.5em;
-    margin-bottom: 2em;
+.radio{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.section1 .radio label{
+    margin-right: 1em;
+    padding-left: 1.5em;
     font-size: 0.8em;
+    position: relative;
+    flex-direction: row;
+}
+
+label:before{
+    position: absolute;
+    content: "";
+    height: 1.1em;
+    width: 1.1em;
+    border-radius: 50%;
+    left: 0em;
+    box-shadow: inset 0 0 0 1px rgb(184, 184, 184);
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+input[type="radio"]:checked + label:before{
+    box-shadow: inset 0 0 0 3px #0061FF;
+    border: 0;
 }
 
     /* grid */
@@ -229,7 +282,7 @@ header a:hover {
         display: flex;
         justify-content: space-between;
         align-items: stretch;
-        
+        margin-top: 4em;
         font-size: 0.8em;
     }
 
@@ -240,12 +293,12 @@ header a:hover {
 
     /* card plan */
         .card-plan{
-            border: 0.5px solid gray;
+            border: var(--border-gray);
             height: 100%;
         }
 
         .card-plan .type-plan{
-            border-bottom: 1px solid gray;
+            border-bottom: var(--border-gray);
             text-align: center;
             padding: 0.5em 0;
         }
@@ -314,7 +367,7 @@ header a:hover {
         .info-plan hr{
             margin: 2em 0;
             width: 20%;
-            border: 0.5px solid gray;
+            border: 0.2px solid rgb(184, 184, 184);
         }
 
         .info-plan h4{
@@ -386,7 +439,7 @@ header a:hover {
 .text-col p{
     margin-top: 1.5em;
     margin-bottom: 2.5em;
-    color: gray;
+    color: rgb(85, 85, 85);
 }
 /* /SECTION 2 */
 
@@ -405,7 +458,7 @@ header a:hover {
     font-weight: 200;
     font-size: 0.9em;
     line-height: 1.4em;
-    color: gray;
+    color: rgb(85, 85, 85);
 }
 
 .section3 .row{
@@ -469,12 +522,17 @@ header a:hover {
 
 .central-big-square hr{
     margin: 3em 0;
-    border: 0.5px solid gray;
+    border: 0.5px solid rgb(184, 184, 184);
     width: 20%;
 }
 
 .central-big-square p{
     margin-bottom: 3em;
+}
+
+.central-big-square{
+    color: rgb(85, 85, 85);
+
 }
 
 .small-square img{
@@ -555,6 +613,7 @@ header a:hover {
     padding-top: 2em;
     padding-bottom: 2em;
     position: relative;
+    font-weight: 400;
 }
 
 .answer{
@@ -619,6 +678,7 @@ footer{
     color: inherit;
     font-size: 0.7em;
     text-decoration: inherit;
+    padding: 0;
 }
 
 .card-footer h4{
