@@ -547,18 +547,13 @@ header a:hover {
 }
 .question{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
     padding-top: 2em;
     padding-bottom: 2em;
-    padding-right: 2em;
+    position: relative;
 }
-
-.question .icon:first-of-type{
-    display: none;
-}
-
 
 .answer{
     padding: 2em 0;
@@ -569,9 +564,25 @@ header a:hover {
     display: block;
 }
 
-.question:hover .icon:first-child{
-    display: unset;
+.question .icon{
+    position: absolute;
+    right: 0;
 }
+
+.question .icon-hover{
+    display: none;
+}
+
+.question:hover .icon-hover{
+    display: block;
+}
+
+.question:hover .icon-1{
+    display: none;
+}
+
+
+.question:hover 
 /* /FAQ */
 
 /* FOOTER */
